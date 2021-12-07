@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TTN">
         <activity
+            android:name=".PencatatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PembayaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PemesananActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

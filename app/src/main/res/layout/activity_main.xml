@@ -1,96 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_background"
     tools:context=".MainActivity">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="20dp"
-        android:id="@+id/layout1"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/searchbar"
-        android:layout_height="50dp">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_arrow_back_24"
-            android:layout_centerVertical="true"
-            android:paddingLeft="20dp"
-            />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_search_24"
-            android:layout_alignParentRight="true"
-            android:paddingRight="20dp"
-            android:layout_centerVertical="true"
-            />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:text="Lorem ipsum dolor sit amet"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:animateLayoutChanges="true"
+        android:id="@+id/fragment_container"/>
 
-    </RelativeLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@+id/layout1"
-        android:textSize="17sp"
-        android:layout_marginTop="20dp"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis consectetur varius."
-        android:textColor="#FFFFFF"
-        android:id="@+id/text2"
-        />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/text2"
-        android:layout_marginTop="190dp"
-        android:background="@drawable/main_back"
-        android:id="@+id/layout2"
-        android:layout_height="match_parent">
-        <RelativeLayout
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
-            android:layout_marginLeft="40dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginRight="40dp"
-            android:layout_marginBottom="200dp"
-            android:layout_height="wrap_content">
-            <androidx.recyclerview.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:id="@+id/recyclerView"
-                />
-        </RelativeLayout>
-    </RelativeLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bottom_navigation_background"
+            android:elevation="8dp"
+            app:itemRippleColor="@null"
+            app:itemIconTint="@drawable/bottom_navigation_color_selector"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/bottom_navigation_menu">
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/bottom_navigation_background"
-        android:elevation="8dp"
-        app:itemIconTint="@drawable/bottom_navigation_color_selector"
-        app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_navigation_menu" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
