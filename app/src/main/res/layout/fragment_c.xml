@@ -14,11 +14,11 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/c1"
             android:layout_width="match_parent"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="55dp"
+            android:layout_marginEnd="25dp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="12dp"
             app:cardElevation="10dp">

@@ -13,11 +13,15 @@
         <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/drawable/ic_search_24px.xml" value="0.3074074074074074" />
         <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/drawable/main_back.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/drawable/main_background.xml" value="0.3074074074074074" />
+        <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/drawable/rounded_edittext.xml" value="0.33796296296296297" />
         <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/drawable/searchbar.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/drawable/searchbar_back.xml" value="0.21614583333333334" />
-        <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/layout/activity_dashboard.xml" value="0.296195652173913" />
+        <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/layout/activity_main.xml" value="0.2907608695652174" />
+        <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/layout/activity_pembayaran.xml" value="0.3342391304347826" />
+        <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/layout/activity_pemesanan.xml" value="0.3342391304347826" />
         <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/layout/activity_pencatatan.xml" value="0.35507246376811596" />
+        <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/layout/activity_register.xml" value="0.3342391304347826" />
         <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/layout/fragment_a.xml" value="0.25" />
         <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/layout/fragment_b.xml" value="0.296195652173913" />
         <entry key="..\:/Users/ROOT/AndroidStudioProjects/TTN/app/src/main/res/layout/fragment_c.xml" value="0.25" />

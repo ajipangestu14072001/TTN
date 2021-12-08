@@ -12,11 +12,11 @@
         android:padding="10dp">
 
         <RelativeLayout
-            android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/mainLayout"
-            android:layout_alignParentTop="true">
+            android:layout_alignParentTop="true"
+            android:id="@+id/headerLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:gravity="center"
-                    android:text="Login"
+                    android:text="Register"
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold" />
@@ -64,7 +64,7 @@
                     android:orientation="vertical">
 
                     <EditText
-                        android:id="@+id/txtuser"
+                        android:id="@+id/txtuserreg"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:layout_marginBottom="16dp"
@@ -76,7 +76,7 @@
                         android:textSize="14sp" />
 
                     <EditText
-                        android:id="@+id/txtpassword"
+                        android:id="@+id/txtpasswordreg"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
                         android:background="@drawable/rounded_edittext"
@@ -87,7 +87,7 @@
                         android:textSize="14sp" />
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardlogin"
+                        android:id="@+id/cardloginreg"
                         android:layout_width="150dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
@@ -103,7 +103,7 @@
                             android:drawablePadding="10dp"
                             android:drawableTint="#E8FFFFFF"
                             android:gravity="center"
-                            android:text="Login"
+                            android:text="Register"
                             android:textColor="#F0FFFFFF"
                             android:textSize="17sp" />
 
@@ -132,7 +132,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
-                    android:text="Belum Punya Akun?"
+                    android:text="Sudah Punya Akun?"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
@@ -161,7 +161,7 @@
                     app:cardElevation="0dp">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/cardregis"
+                        android:id="@+id/cardregisreg"
                         android:layout_width="150dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
@@ -177,7 +177,7 @@
                             android:drawablePadding="10dp"
                             android:drawableTint="#E8FFFFFF"
                             android:gravity="center"
-                            android:text="Register"
+                            android:text="Login"
                             android:textColor="#F0FFFFFF"
                             android:textSize="17sp" />
 
